@@ -10,12 +10,76 @@ html ,body{
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: aquamarine;
+    background-color: #c8e8e9;
 }
 .form{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     max-width: 1100px;
-    background-color: aliceblue;
+    background-color: #fff;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+.box:last-child{
+    margin-bottom: 0;
+}
+.left-side{
+    margin : 50px 35px;
+}
+
+#item {
+    color: #3e2093;
+    font-size: 30px;
+
+}
+.text0{
+    font-weight:500;
+    font-size: 18px;
+}
+.text1,.text2{
+    font-size: 13px;
+    color: #afafb6;
+}
+
+.topic-text{
+    font-weight: 500;
+    font-size: 25px;
+     color: #3e2093;
+}
+.info{
+    font-size: 15px;
+    color: #afafb6;
+    width: 85%;
+    margin-bottom: 10px;
+}
+.name-email,.message{
+    height: 42px;
+    width: 85%;
+    border: none;
+    font-size: 16px;
+    background: #f0f1f8;
+    border-radius: 6px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.message{
+    min-height: 170px;
+}
+.send{
+    color: #fff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  
 }
