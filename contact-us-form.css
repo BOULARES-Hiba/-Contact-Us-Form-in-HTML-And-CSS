@@ -49,7 +49,7 @@ html ,body{
 
 .topic-text{
     font-weight: 500;
-    font-size: 25px;
+    font-size: 27px;
      color: #3e2093;
 }
 .info{
@@ -68,9 +68,32 @@ html ,body{
     padding: 0 15px;
     margin-bottom: 10px;
     cursor: pointer;
+    transition: border 0.15s;
 }
+.name-email:hover,.message:hover,
+.name-email:focus, .message:focus
+{
+    border: 1px solid #3e2093;
+   
+     
+}
+
+.left-side{
+    position: relative;
+}
+.form .left-side::after {
+    content: "";
+    position: absolute;
+    height: 75%;
+    width: 2px;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+  }
+
 .message{
-    min-height: 170px;
+    min-height: 170px;    
 }
 .send{
     color: #fff;
@@ -81,5 +104,13 @@ html ,body{
   border-radius: 6px;
   background: #3e2093;
   cursor: pointer;
+  transition: backgound-color 0.15s,
   
 }
+
+.send:hover{
+    background-color: #8a95ea;
+    color:#3e2093 ;
+}
+
+
